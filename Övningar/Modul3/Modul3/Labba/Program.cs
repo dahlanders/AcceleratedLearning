@@ -10,8 +10,6 @@ namespace Checkpoint01.AndersDahl
         static void Main(string[] args)
         {
 
-
-
             Console.Write("Ange kommando:");
             Console.ForegroundColor = ConsoleColor.Green;
             string input = Console.ReadLine();
@@ -21,19 +19,32 @@ namespace Checkpoint01.AndersDahl
             {
                 int i = int.Parse(s);
 
-
-                for (int row = 1; row <= i; ++row)
                 {
-                    for (int col = 1; col <= row; ++col)
-                    {
-                        Console.Write("*");
-                    }
 
-                    Console.WriteLine();
+
+                    for (int row = 1; row <= i; ++row)
+                    {
+
+
+                        Addstars(row);
+                        Console.WriteLine();
+
+
+
+                    }
                 }
+            }
+        }
+        static void Addstars(int numberOfStars)
+        {
+            for (int col = 1; col <= numberOfStars; col++)
+            {
+                Console.Write("*");
             }
         }
     }
 }
+
+
 
 
