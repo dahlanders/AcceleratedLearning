@@ -17,8 +17,11 @@ namespace Elevatortest
             var e = new Elevator(Name, startfloor, MinFloor, MaxFloor);
 
             e.GoUp();
-
-            Assert.AreEqual(4, e.CurrentFloor);
+            e.GoUp();
+            e.GoUp();
+            e.GoUp();
+            e.GoUp();
+            Assert.AreEqual(e.MaxFloor, e.CurrentFloor);
          
         
 
