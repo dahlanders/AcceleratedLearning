@@ -25,7 +25,7 @@ namespace Modul81
             }
             catch (Exception e)
             {
-                Console.WriteLine("Fel inpu");
+                Console.WriteLine("Fel input");
             }
         }
         static decimal HowManyPices()
