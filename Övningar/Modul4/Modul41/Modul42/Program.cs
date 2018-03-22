@@ -26,9 +26,6 @@ namespace Modul42
         }
         static void RespondToUser(string[] namelist)
         {
-
-
-
             Console.ForegroundColor = ConsoleColor.Green;
             foreach (string person in namelist)
             {
