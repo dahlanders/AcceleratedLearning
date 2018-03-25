@@ -15,11 +15,9 @@ namespace Modul71
         public Elevator(string name,int startfloor , int minfloor, int maxfloor)
         {
             Name = name;
-            //StartFloor = startfloor; 
             CurrentFloor = startfloor;
             MinFloor = minfloor;
             MaxFloor = maxfloor;
-           
             MAX_UpsAndDowns = 10;
             TotalNumbersUpsandDown = 0;
         }

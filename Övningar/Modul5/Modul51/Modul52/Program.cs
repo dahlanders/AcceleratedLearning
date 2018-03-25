@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Threading;
+using System.Text;
 
-namespace ConsoleApp24
+namespace Modul52
 {
     class Program
     {
@@ -16,38 +16,39 @@ namespace ConsoleApp24
             TakeTimeWithStopwatch("Tennis, anyone?", 500);
             TakeTimeWithStopwatch("Tennis, anyone?", 5000);
             TakeTimeWithStopwatch("Tennis, anyone?", 50000);
-        //}
-        //static string GenerateString(string repeat, int cycles)
-        //{
+            //}
+            //static string GenerateString(string repeat, int cycles)
+            //{
 
-        //    string message = "";
+            //    string message = "";
 
-        //    for (int i = 0; i < cycles; i++)
-        //    {
-        //        message = repeat + "";
+            //    for (int i = 0; i < cycles; i++)
+            //    {
+            //        message = repeat + "";
 
 
-        //    }
+            //    }
 
-        //    return message;
+            //    return message;
 
         }
         static string TakeTimeWithStopwatch(string repeat, int cycles)
         {
             Stopwatch stopwatch = new Stopwatch();
             stopwatch.Start();
-            string message = "";
+           
+            StringBuilder sb = new StringBuilder();
 
             for (int i = 0; i < cycles; i++)
             {
-                message = message + repeat;
-
-
+                sb.Append(repeat);
             }
+
+            
             stopwatch.Stop();
-            var lengthOfString = message.Length;
+            var lengthOfString = sb.Length;
             Console.WriteLine($"{cycles}\t\t\t{lengthOfString}\t\t\t\t\t{stopwatch.Elapsed.TotalMilliseconds}");
-            return message;
+           return sb.ToString();
         }
     }
 }
