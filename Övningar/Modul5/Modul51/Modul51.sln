@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "testa", "testa\testa.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul53", "Modul53\Modul53.csproj", "{8FBF09C5-7A40-4243-AB6D-9BA73912602A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{77CE41DE-8EEB-4297-AE5F-CA5D121830D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modul54", "ConsoleApp1\Modul54.csproj", "{77CE41DE-8EEB-4297-AE5F-CA5D121830D4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

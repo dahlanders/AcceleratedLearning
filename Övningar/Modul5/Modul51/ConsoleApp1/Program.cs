@@ -1,12 +1,22 @@
 ﻿using System;
 
-namespace ConsoleApp1
+public class Program
 {
-    class Program
+    static void ChangeValue(int x)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("Hello World!");
-        }
+        x = 200;
+
+        Console.WriteLine(x);
+    }
+
+    public static void Main()
+    {
+        int i = 100;
+
+        Console.WriteLine(i);
+
+        ChangeValue(i);
+
+        Console.WriteLine(i);
     }
 }
